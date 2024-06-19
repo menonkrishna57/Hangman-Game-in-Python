@@ -5,6 +5,7 @@ someWords = '''apple banana mango strawberry
 orange grape pineapple apricot lemon coconut watermelon 
 cherry papaya berry peach lychee muskmelon'''
 
+# Choose a random word from the list
 someWords = someWords.split()
 word = someWords[r.randint(0, len(someWords)-1)]
 mylen = len(word)
