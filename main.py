@@ -1,4 +1,5 @@
 import random as r
+import animation as a
 
 # List of words to choose from
 someWords = '''apple banana mango strawberry  
@@ -10,7 +11,7 @@ someWords = someWords.split()
 word = someWords[r.randint(0, len(someWords)-1)]
 mylen = len(word)
 guessedword = ["_"] * mylen
-chances = mylen + 2
+chances = 8
 
 # Print initial message
 print(f"Start guessing the word letter by letter \n You will get {chances} tries to find the word")
@@ -20,7 +21,7 @@ for i in range(mylen):
     print(guessedword[i], end=" ")
 print()
 
-playing, guessed = True, False
+playing, guessed = True, False                                
 
 while playing and chances != 0:
     guess = input("Enter your guess: ")
@@ -41,6 +42,7 @@ while playing and chances != 0:
     else:
         chances -= 1
         print(f"\n\nWrong Guess, {chances} left")
+    a.hang_animation(chances)
 
     # Check if all letters have been guessed
     if "_" not in guessedword:
