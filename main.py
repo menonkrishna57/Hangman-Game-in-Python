@@ -1,6 +1,29 @@
 import random as r
 import animation as a
+import sqlite3 as s
+con=s.connect("Hangman.db")
+cur=con.cursor()
+cur.execute("create table if not exists categories (category TEXT)")
+cur.execute("create table if not exists words (category TEXT, word TEXT)")
 
+# List of words for each category
+fruits = ['apple', 'banana', 'mango', 'strawberry', 'orange', 'grape', 'pineapple', 'apricot', 'lemon', 'coconut', 'watermelon', 'cherry', 'papaya', 'berry', 'peach', 'lychee', 'muskmelon']
+cars = ['ford', 'toyota', 'honda', 'chevrolet', 'bmw', 'mercedes', 'audi', 'volkswagen', 'nissan', 'subaru', 'mazda', 'hyundai', 'kia', 'volvo', 'jeep', 'tesla']
+
+# Insert categories into the table
+cur.execute("INSERT INTO categories (category) VALUES (?)", ('fruits',))
+cur.execute("INSERT INTO categories (category) VALUES (?)", ('cars',))
+
+# Insert words into the table
+for fruit in fruits:
+    cur.execute("INSERT INTO words (category, word) VALUES (?, ?)", ('fruits', fruit))
+
+for car in cars:
+    cur.execute("INSERT INTO words (category, word) VALUES (?, ?)", ('cars', car))
+
+con.commit()
+
+con.close()
 # List of words to choose from
 someWords = '''apple banana mango strawberry  
 orange grape pineapple apricot lemon coconut watermelon 

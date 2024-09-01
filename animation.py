@@ -59,4 +59,4 @@ hangman_animation = [
 
 # Example usage:
 def hang_animation(tries):
-    print(hangman_animation[7-tries])
+    print(hangman_animation[8-tries])
