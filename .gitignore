@@ -1,7 +1,9 @@
 __pycache__/animation.cpython-313.pyc
-hangman-terminal/hangman_terminal.egg-info
-hangman-terminal/dist
-hangman-terminal/build
+hangman_terminal/hangman_terminal.egg-info
+hangman_terminal/dist
+hangman_terminal/build
 debug.log
 .vscode
 .github/workflows
+venv
+hangman_terminal/hangman_terminal/__pycache__/

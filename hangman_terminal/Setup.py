@@ -8,7 +8,7 @@ setuptools.setup(
     name="hangman-terminal",
 
     # version of the module
-    version="0.0.1",
+    version="0.0.2",
 
     # Name of Author
     author="Krishna Menon",
@@ -49,4 +49,10 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
+    entry_points={
+    'console_scripts': [
+        # The command can have a hyphen, but the module path MUST use an underscore.
+        'hangman-terminal = hangman_terminal.main:main',
+    ],
+    }
 )
