@@ -17,7 +17,7 @@ setuptools.setup(
     author_email="menonkrishna57@gmail.com",
 
     # #Small Description about module
-    # description="adding number",
+    description="Hangman in terminal",
 
     # long_description=long_description,
 
