@@ -7,11 +7,11 @@ A classic game of Hangman that you can play right in your terminal! Features fun
 
 ## Gameplay Demo
 
-![Gameplay GIF](link_to_your_gameplay_gif.gif)
+![Gameplay GIF](https://raw.githubusercontent.com/menonkrishna57/Hangman-Game-in-Python/refs/heads/main/media/usage.gif)
 
-*(**Developer's Note:** You can create a GIF of your terminal using tools like [asciinema](https://asciinema.org/) and [agg](https://github.com/asciinema/asciinema-player/wiki/GIF-recording) to showcase your game here. It's highly recommended!)*
 
----
+
+
 
 ## Features
 
@@ -21,8 +21,29 @@ A classic game of Hangman that you can play right in your terminal! Features fun
 * **Lightweight & Simple:** No external dependencies needed. Just install and play!
 
 ## Installation
-
-Since this package is published on PyPI, you can install it easily using `pip`:
+You can install it easily using `pip`:
 
 ```bash
 pip install hangman-terminal
+```
+
+## Usage
+There are two main ways to run the game:
+
+### 1. From the Command Line:
+After installation, you can start the game by simply typing this command in your terminal:
+
+```Bash
+hangman-terminal
+```
+### 2. As a Python Module:
+You can also import and run the game from within your own Python script.
+
+```Python
+
+import hangman_terminal as
+# This will start the game
+ht.main()
+```
+## Contributing
+Contributions, issues, and feature requests are welcome!  Feel free to check the [issues](https://github.com/menonkrishna57/Hangman-Game-in-Python/issues) page.
