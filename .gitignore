@@ -7,3 +7,4 @@ debug.log
 .github/workflows
 venv
 hangman_terminal/hangman_terminal/__pycache__/
+test.py
