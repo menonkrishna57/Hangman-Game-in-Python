@@ -8,7 +8,7 @@ setuptools.setup(
     name="hangman-terminal",
 
     # version of the module
-    version="0.0.2",
+    version="1.0.0",
 
     # Name of Author
     author="Krishna Menon",
