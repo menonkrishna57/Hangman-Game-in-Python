@@ -1,6 +1,6 @@
 import setuptools
 
-with open("README.md", "r") as fh:
+with open("../README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
@@ -8,7 +8,7 @@ setuptools.setup(
     name="hangman-terminal",
 
     # version of the module
-    version="1.0.0",
+    version="1.0.1",
 
     # Name of Author
     author="Krishna Menon",
